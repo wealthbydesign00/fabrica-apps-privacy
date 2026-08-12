@@ -5,100 +5,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fábrica Apps – Privacy Policy</title>
 <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-max-width: 800px;
-margin: 0 auto;
-padding: 40px 20px;
-line-height: 1.6;
-color: #222;
-background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
 }
-h1 {
-font-size: 28px;
-margin-bottom: 4px;
+
+/* ── Tab bar ── */
+.lang-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  background: #fff;
 }
+
+.lang-tab {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color .15s, border-color .15s;
+  letter-spacing: .03em;
+}
+
+.lang-tab:hover { color: #333; }
+
+.lang-tab.active {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+/* ── Content panels ── */
+.lang-panel {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.lang-panel.active { display: block; }
+
+h1 { font-size: 28px; margin-bottom: 4px; }
+
 .effective-date {
-color: #666;
-margin-bottom: 30px;
-font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
 }
+
 h2 {
-font-size: 20px;
-margin-top: 36px;
-margin-bottom: 10px;
-border-bottom: 1px solid #eee;
-padding-bottom: 6px;
+  font-size: 20px;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
 }
-p {
-margin: 12px 0;
-}
-ul {
-margin: 10px 0;
-padding-left: 24px;
-}
-li {
-margin: 4px 0;
-}
-a {
-color: #0066cc;
-}
+
+p { margin: 12px 0; }
+
+ul { margin: 10px 0; padding-left: 24px; }
+li { margin: 4px 0; }
+
+a { color: #0066cc; }
+
 footer {
-margin-top: 50px;
-padding-top: 20px;
-border-top: 1px solid #eee;
-font-size: 13px;
-color: #888;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #888;
 }
 </style>
 </head>
 <body>
 
+<!-- Tab bar -->
+<nav class="lang-bar">
+  <button class="lang-tab active" onclick="switchLang('en')">EN</button>
+  <button class="lang-tab" onclick="switchLang('es')">ES</button>
+  <button class="lang-tab" onclick="switchLang('pt')">PT</button>
+</nav>
+
+<!-- ══════════════════════════════════════
+     ENGLISH
+════════════════════════════════════════ -->
+<div id="panel-en" class="lang-panel active">
 <h1>Fábrica Apps – Privacy Policy</h1>
 <p class="effective-date">Effective Date: August 12, 2026</p>
 
 <p>Thank you for using applications published by Fábrica Apps ("we", "our", or "us").</p>
-
 <p>Your privacy is important to us. Our goal is to build simple, privacy-friendly mobile applications that work primarily offline and collect as little personal information as possible.</p>
-
 <p>This Privacy Policy explains how information is handled when you use any mobile application published under the Fábrica Apps developer account on Google Play or the Apple App Store.</p>
 
 <h2>1. Scope</h2>
 <p>This Privacy Policy applies to all mobile applications developed and published by Fábrica Apps unless a specific application contains its own supplemental privacy notice.</p>
 <p>Examples include, but are not limited to:</p>
 <ul>
-<li>BuildProfit</li>
-<li>Lolojoli</li>
-<li>Divide n Eat</li>
-<li>Envelope Budget Planner</li>
-<li>FitPro – Business Suite</li>
-<li>Cozinha Lucrativa</li>
+<li>BuildProfit</li><li>Lolojoli</li><li>Divide n Eat</li>
+<li>Envelope Budget Planner</li><li>FitPro – Business Suite</li><li>Cozinha Lucrativa</li>
 </ul>
 <p>Some applications may include additional disclosures when required by law or when specific features are introduced.</p>
 
 <h2>2. Our Privacy Philosophy</h2>
 <p>Our applications are designed around the following principles:</p>
 <ul>
-<li>Privacy by Design</li>
-<li>Offline First</li>
-<li>Minimal Data Collection</li>
-<li>No Account Required (unless explicitly stated)</li>
-<li>No Sale of Personal Information</li>
+<li>Privacy by Design</li><li>Offline First</li><li>Minimal Data Collection</li>
+<li>No Account Required (unless explicitly stated)</li><li>No Sale of Personal Information</li>
 </ul>
 <p>Whenever possible, your information remains stored locally on your own device.</p>
 
 <h2>3. Information We Collect</h2>
 <p>Most Fábrica Apps applications do not require:</p>
 <ul>
-<li>user registration</li>
-<li>usernames</li>
-<li>passwords</li>
-<li>phone numbers</li>
-<li>home addresses</li>
-<li>government identification</li>
-<li>payment card information</li>
-<li>photographs</li>
-<li>contacts</li>
+<li>user registration</li><li>usernames</li><li>passwords</li>
+<li>phone numbers</li><li>home addresses</li><li>government identification</li>
+<li>payment card information</li><li>photographs</li><li>contacts</li>
 </ul>
 <p>The majority of user-generated content remains stored locally on your device.</p>
 
@@ -106,14 +137,9 @@ color: #888;
 <p>Some applications may automatically collect limited technical information through trusted third-party services.</p>
 <p>This information may include:</p>
 <ul>
-<li>Device model</li>
-<li>Operating system version</li>
-<li>App version</li>
-<li>Language</li>
-<li>Country or region</li>
-<li>Anonymous identifiers</li>
-<li>Crash reports</li>
-<li>Performance information</li>
+<li>Device model</li><li>Operating system version</li><li>App version</li>
+<li>Language</li><li>Country or region</li><li>Anonymous identifiers</li>
+<li>Crash reports</li><li>Performance information</li>
 </ul>
 <p>This information is used exclusively to improve application quality, reliability and stability.</p>
 
@@ -121,13 +147,8 @@ color: #888;
 <p>Most information created inside our applications is stored locally on your device.</p>
 <p>Examples include:</p>
 <ul>
-<li>budgets</li>
-<li>calculations</li>
-<li>project estimates</li>
-<li>timers</li>
-<li>workout logs</li>
-<li>saved preferences</li>
-<li>application settings</li>
+<li>budgets</li><li>calculations</li><li>project estimates</li><li>timers</li>
+<li>workout logs</li><li>saved preferences</li><li>application settings</li>
 </ul>
 <p>We generally do not receive or store this information on our servers.</p>
 <p>If you uninstall the application, locally stored information may be permanently deleted unless you have created your own backup.</p>
@@ -137,10 +158,8 @@ color: #888;
 <p>AdMob may automatically collect certain information to display relevant advertisements and measure advertising performance.</p>
 <p>Information collected by Google may include:</p>
 <ul>
-<li>Advertising Identifier</li>
-<li>Device Information</li>
-<li>Approximate Location (if enabled by the operating system)</li>
-<li>Advertising Performance Data</li>
+<li>Advertising Identifier</li><li>Device Information</li>
+<li>Approximate Location (if enabled by the operating system)</li><li>Advertising Performance Data</li>
 </ul>
 <p>For more information, please review Google's Privacy Policy.</p>
 <p>Purchasing the "Remove Ads" option disables advertising within the application where applicable.</p>
@@ -148,16 +167,10 @@ color: #888;
 <h2>7. In-App Purchases</h2>
 <p>Some applications offer optional purchases such as:</p>
 <ul>
-<li>Remove Ads</li>
-<li>Lifetime Premium</li>
-<li>Monthly Subscription</li>
-<li>Annual Subscription</li>
+<li>Remove Ads</li><li>Lifetime Premium</li><li>Monthly Subscription</li><li>Annual Subscription</li>
 </ul>
 <p>Purchases are securely processed by:</p>
-<ul>
-<li>Google Play Billing</li>
-<li>Apple In-App Purchases</li>
-</ul>
+<ul><li>Google Play Billing</li><li>Apple In-App Purchases</li></ul>
 <p>We do not receive or store your payment card information.</p>
 <p>Purchase validation and entitlement management may be performed using RevenueCat.</p>
 
@@ -165,11 +178,8 @@ color: #888;
 <p>Some applications use anonymous analytics services, including Firebase Analytics.</p>
 <p>Analytics help us understand:</p>
 <ul>
-<li>feature usage</li>
-<li>application stability</li>
-<li>user engagement</li>
-<li>language preferences</li>
-<li>crash frequency</li>
+<li>feature usage</li><li>application stability</li><li>user engagement</li>
+<li>language preferences</li><li>crash frequency</li>
 </ul>
 <p>Analytics data is aggregated and is not intended to identify individual users.</p>
 
@@ -177,9 +187,7 @@ color: #888;
 <p>Some applications use Firebase Crashlytics.</p>
 <p>Crash reports may include:</p>
 <ul>
-<li>device model</li>
-<li>operating system</li>
-<li>application version</li>
+<li>device model</li><li>operating system</li><li>application version</li>
 <li>anonymous technical diagnostics</li>
 </ul>
 <p>These reports help us fix bugs and improve reliability.</p>
@@ -210,11 +218,8 @@ color: #888;
 <h2>14. Third-Party Services</h2>
 <p>Our applications may rely on trusted third-party providers, including:</p>
 <ul>
-<li>Google Play Services</li>
-<li>Google AdMob</li>
-<li>Google Firebase Analytics</li>
-<li>Google Firebase Crashlytics</li>
-<li>RevenueCat</li>
+<li>Google Play Services</li><li>Google AdMob</li><li>Google Firebase Analytics</li>
+<li>Google Firebase Crashlytics</li><li>RevenueCat</li>
 <li>Apple App Store Services (for iOS applications)</li>
 </ul>
 <p>Each provider maintains its own privacy policy.</p>
@@ -230,16 +235,324 @@ color: #888;
 
 <h2>17. Contact</h2>
 <p>If you have questions regarding this Privacy Policy, please contact us:</p>
-<p>Fábrica Apps<br>
-Email: <a href="mailto:lcgf02@gmail.com">lcgf02@gmail.com</a></p>
+<p>Fábrica Apps<br>Email: <a href="mailto:lcgf02@gmail.com">lcgf02@gmail.com</a></p>
 
 <h2>18. App-Specific Notices</h2>
 <p>Certain applications may include additional privacy disclosures when required by their specific functionality.</p>
 <p>In the event of any conflict between this general Privacy Policy and an application-specific notice, the application-specific notice shall prevail for that application.</p>
 
-<footer>
-&copy; 2026 Fábrica Apps. All rights reserved.
-</footer>
+<footer>&copy; 2026 Fábrica Apps. All rights reserved.</footer>
+</div>
 
+<!-- ══════════════════════════════════════
+     ESPAÑOL
+════════════════════════════════════════ -->
+<div id="panel-es" class="lang-panel">
+<h1>Fábrica Apps – Política de Privacidad</h1>
+<p class="effective-date">Fecha de vigencia: 12 de agosto de 2026</p>
+
+<p>Gracias por utilizar las aplicaciones publicadas por Fábrica Apps ("nosotros", "nuestro" o "nos").</p>
+<p>Tu privacidad es importante para nosotros. Nuestro objetivo es crear aplicaciones móviles simples y respetuosas con la privacidad, que funcionen principalmente sin conexión y recopilen la menor cantidad posible de información personal.</p>
+<p>Esta Política de Privacidad explica cómo se maneja la información cuando utilizas cualquier aplicación móvil publicada bajo la cuenta de desarrollador Fábrica Apps en Google Play o la App Store de Apple.</p>
+
+<h2>1. Ámbito de aplicación</h2>
+<p>Esta Política de Privacidad se aplica a todas las aplicaciones móviles desarrolladas y publicadas por Fábrica Apps, a menos que una aplicación específica contenga su propio aviso de privacidad complementario.</p>
+<p>Algunos ejemplos incluyen, entre otros:</p>
+<ul>
+<li>BuildProfit</li><li>Lolojoli</li><li>Divide n Eat</li>
+<li>Envelope Budget Planner</li><li>FitPro – Business Suite</li><li>Cozinha Lucrativa</li>
+</ul>
+<p>Algunas aplicaciones pueden incluir divulgaciones adicionales cuando lo exija la ley o cuando se introduzcan funciones específicas.</p>
+
+<h2>2. Nuestra filosofía de privacidad</h2>
+<p>Nuestras aplicaciones están diseñadas en torno a los siguientes principios:</p>
+<ul>
+<li>Privacidad por diseño</li><li>Prioridad sin conexión</li><li>Recopilación mínima de datos</li>
+<li>Sin cuenta requerida (salvo indicación expresa)</li><li>Sin venta de información personal</li>
+</ul>
+<p>Siempre que sea posible, tu información permanece almacenada localmente en tu propio dispositivo.</p>
+
+<h2>3. Información que recopilamos</h2>
+<p>La mayoría de las aplicaciones de Fábrica Apps no requieren:</p>
+<ul>
+<li>registro de usuario</li><li>nombres de usuario</li><li>contraseñas</li>
+<li>números de teléfono</li><li>direcciones de domicilio</li><li>identificación gubernamental</li>
+<li>información de tarjetas de pago</li><li>fotografías</li><li>contactos</li>
+</ul>
+<p>La mayor parte del contenido generado por el usuario permanece almacenado localmente en tu dispositivo.</p>
+
+<h2>4. Información recopilada automáticamente</h2>
+<p>Algunas aplicaciones pueden recopilar automáticamente información técnica limitada a través de servicios de terceros de confianza.</p>
+<p>Esta información puede incluir:</p>
+<ul>
+<li>Modelo de dispositivo</li><li>Versión del sistema operativo</li><li>Versión de la aplicación</li>
+<li>Idioma</li><li>País o región</li><li>Identificadores anónimos</li>
+<li>Informes de fallos</li><li>Información de rendimiento</li>
+</ul>
+<p>Esta información se utiliza exclusivamente para mejorar la calidad, fiabilidad y estabilidad de las aplicaciones.</p>
+
+<h2>5. Almacenamiento local</h2>
+<p>La mayor parte de la información creada dentro de nuestras aplicaciones se almacena localmente en tu dispositivo.</p>
+<p>Algunos ejemplos incluyen:</p>
+<ul>
+<li>presupuestos</li><li>cálculos</li><li>estimaciones de proyectos</li><li>temporizadores</li>
+<li>registros de entrenamiento</li><li>preferencias guardadas</li><li>configuración de la aplicación</li>
+</ul>
+<p>Por lo general, no recibimos ni almacenamos esta información en nuestros servidores.</p>
+<p>Si desinstalas la aplicación, la información almacenada localmente puede eliminarse permanentemente, a menos que hayas creado tu propia copia de seguridad.</p>
+
+<h2>6. Publicidad</h2>
+<p>Algunas aplicaciones muestran anuncios mediante Google AdMob.</p>
+<p>AdMob puede recopilar automáticamente cierta información para mostrar anuncios relevantes y medir el rendimiento publicitario.</p>
+<p>La información recopilada por Google puede incluir:</p>
+<ul>
+<li>Identificador publicitario</li><li>Información del dispositivo</li>
+<li>Ubicación aproximada (si el sistema operativo lo permite)</li><li>Datos de rendimiento publicitario</li>
+</ul>
+<p>Para más información, consulta la Política de Privacidad de Google.</p>
+<p>La compra de la opción "Eliminar anuncios" desactiva la publicidad dentro de la aplicación donde corresponda.</p>
+
+<h2>7. Compras dentro de la aplicación</h2>
+<p>Algunas aplicaciones ofrecen compras opcionales como:</p>
+<ul>
+<li>Eliminar anuncios</li><li>Premium de por vida</li><li>Suscripción mensual</li><li>Suscripción anual</li>
+</ul>
+<p>Las compras son procesadas de forma segura por:</p>
+<ul><li>Google Play Billing</li><li>Compras integradas de Apple</li></ul>
+<p>No recibimos ni almacenamos la información de tu tarjeta de pago.</p>
+<p>La validación de compras y la gestión de derechos pueden realizarse mediante RevenueCat.</p>
+
+<h2>8. Análisis</h2>
+<p>Algunas aplicaciones utilizan servicios de análisis anónimos, incluido Firebase Analytics.</p>
+<p>El análisis nos ayuda a comprender:</p>
+<ul>
+<li>el uso de funciones</li><li>la estabilidad de la aplicación</li><li>la participación de los usuarios</li>
+<li>las preferencias de idioma</li><li>la frecuencia de fallos</li>
+</ul>
+<p>Los datos de análisis son agregados y no están destinados a identificar a usuarios individuales.</p>
+
+<h2>9. Informes de fallos</h2>
+<p>Algunas aplicaciones utilizan Firebase Crashlytics.</p>
+<p>Los informes de fallos pueden incluir:</p>
+<ul>
+<li>modelo de dispositivo</li><li>sistema operativo</li><li>versión de la aplicación</li>
+<li>diagnósticos técnicos anónimos</li>
+</ul>
+<p>Estos informes nos ayudan a corregir errores y mejorar la fiabilidad.</p>
+
+<h2>10. Privacidad de los menores</h2>
+<p>Nuestras aplicaciones no están dirigidas a menores de 13 años, salvo indicación expresa.</p>
+<p>No recopilamos conscientemente información personal de menores.</p>
+<p>Si tomamos conocimiento de que se ha recopilado información personal de un menor en violación de la legislación aplicable, eliminaremos dicha información de inmediato.</p>
+
+<h2>11. Tus derechos de privacidad</h2>
+<p>Dependiendo de tu jurisdicción, incluidos ciertos estados de EE. UU., es posible que tengas derechos sobre tu información personal, entre ellos:</p>
+<ul>
+<li>el derecho a saber qué información se recopila</li>
+<li>el derecho a solicitar su eliminación cuando corresponda</li>
+<li>el derecho a solicitar su corrección cuando corresponda</li>
+<li>el derecho a oponerte a ciertas actividades de procesamiento de datos cuando lo exija la ley</li>
+</ul>
+<p>Dado que la mayoría de las aplicaciones de Fábrica Apps almacenan los datos del usuario localmente y no requieren cuentas, muchos de estos derechos pueden ejercerse simplemente eliminando los datos locales de la aplicación o desinstalándola.</p>
+
+<h2>12. Derechos de privacidad en California</h2>
+<p>Si eres residente de California, es posible que tengas derechos adicionales en virtud de las leyes de privacidad aplicables en California.</p>
+<p>Fábrica Apps no vende información personal.</p>
+
+<h2>13. Seguridad de los datos</h2>
+<p>Utilizamos medidas administrativas y técnicas comercialmente razonables para proteger la información gestionada por nuestras aplicaciones.</p>
+<p>Sin embargo, ningún método de almacenamiento o transmisión electrónica puede garantizarse como completamente seguro.</p>
+
+<h2>14. Servicios de terceros</h2>
+<p>Nuestras aplicaciones pueden depender de proveedores externos de confianza, entre ellos:</p>
+<ul>
+<li>Google Play Services</li><li>Google AdMob</li><li>Google Firebase Analytics</li>
+<li>Google Firebase Crashlytics</li><li>RevenueCat</li>
+<li>Apple App Store Services (para aplicaciones iOS)</li>
+</ul>
+<p>Cada proveedor mantiene su propia política de privacidad.</p>
+
+<h2>15. Usuarios internacionales</h2>
+<p>Nuestras aplicaciones están disponibles a nivel internacional.</p>
+<p>Al utilizar nuestras aplicaciones, reconoces que cierta información gestionada por proveedores externos puede procesarse en países distintos al tuyo, sujeto a las leyes aplicables y a las salvaguardas del proveedor.</p>
+
+<h2>16. Cambios en esta Política de Privacidad</h2>
+<p>Podemos actualizar esta Política de Privacidad de vez en cuando.</p>
+<p>La versión actualizada entra en vigor de inmediato tras su publicación.</p>
+<p>La "Fecha de vigencia" en la parte superior de este documento siempre indicará la última revisión.</p>
+
+<h2>17. Contacto</h2>
+<p>Si tienes preguntas sobre esta Política de Privacidad, contáctanos:</p>
+<p>Fábrica Apps<br>Correo electrónico: <a href="mailto:lcgf02@gmail.com">lcgf02@gmail.com</a></p>
+
+<h2>18. Avisos específicos de cada aplicación</h2>
+<p>Ciertas aplicaciones pueden incluir divulgaciones de privacidad adicionales cuando lo requiera su funcionalidad específica.</p>
+<p>En caso de conflicto entre esta Política de Privacidad general y un aviso específico de una aplicación, prevalecerá el aviso específico de dicha aplicación.</p>
+
+<footer>&copy; 2026 Fábrica Apps. Todos los derechos reservados.</footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     PORTUGUÊS
+════════════════════════════════════════ -->
+<div id="panel-pt" class="lang-panel">
+<h1>Fábrica Apps – Política de Privacidade</h1>
+<p class="effective-date">Data de vigência: 12 de agosto de 2026</p>
+
+<p>Obrigado por utilizar os aplicativos publicados pela Fábrica Apps ("nós", "nosso" ou "nos").</p>
+<p>Sua privacidade é importante para nós. Nosso objetivo é criar aplicativos móveis simples e que respeitem a privacidade, que funcionem principalmente offline e coletem o mínimo possível de informações pessoais.</p>
+<p>Esta Política de Privacidade explica como as informações são tratadas quando você utiliza qualquer aplicativo móvel publicado sob a conta de desenvolvedor Fábrica Apps no Google Play ou na App Store da Apple.</p>
+
+<h2>1. Escopo</h2>
+<p>Esta Política de Privacidade se aplica a todos os aplicativos móveis desenvolvidos e publicados pela Fábrica Apps, salvo quando um aplicativo específico contenha seu próprio aviso de privacidade complementar.</p>
+<p>Exemplos incluem, entre outros:</p>
+<ul>
+<li>BuildProfit</li><li>Lolojoli</li><li>Divide n Eat</li>
+<li>Envelope Budget Planner</li><li>FitPro – Business Suite</li><li>Cozinha Lucrativa</li>
+</ul>
+<p>Alguns aplicativos podem incluir divulgações adicionais quando exigidas por lei ou quando recursos específicos forem introduzidos.</p>
+
+<h2>2. Nossa filosofia de privacidade</h2>
+<p>Nossos aplicativos são desenvolvidos com base nos seguintes princípios:</p>
+<ul>
+<li>Privacidade desde o design</li><li>Offline em primeiro lugar</li><li>Coleta mínima de dados</li>
+<li>Sem necessidade de conta (salvo indicação expressa)</li><li>Sem venda de informações pessoais</li>
+</ul>
+<p>Sempre que possível, suas informações permanecem armazenadas localmente no seu próprio dispositivo.</p>
+
+<h2>3. Informações que coletamos</h2>
+<p>A maioria dos aplicativos da Fábrica Apps não exige:</p>
+<ul>
+<li>cadastro de usuário</li><li>nomes de usuário</li><li>senhas</li>
+<li>números de telefone</li><li>endereços residenciais</li><li>documentos de identificação</li>
+<li>informações de cartão de pagamento</li><li>fotografias</li><li>contatos</li>
+</ul>
+<p>A maior parte do conteúdo gerado pelo usuário permanece armazenada localmente no seu dispositivo.</p>
+
+<h2>4. Informações coletadas automaticamente</h2>
+<p>Alguns aplicativos podem coletar automaticamente informações técnicas limitadas por meio de serviços terceiros confiáveis.</p>
+<p>Essas informações podem incluir:</p>
+<ul>
+<li>Modelo do dispositivo</li><li>Versão do sistema operacional</li><li>Versão do aplicativo</li>
+<li>Idioma</li><li>País ou região</li><li>Identificadores anônimos</li>
+<li>Relatórios de falhas</li><li>Informações de desempenho</li>
+</ul>
+<p>Essas informações são utilizadas exclusivamente para melhorar a qualidade, a confiabilidade e a estabilidade dos aplicativos.</p>
+
+<h2>5. Armazenamento local</h2>
+<p>A maior parte das informações criadas dentro dos nossos aplicativos é armazenada localmente no seu dispositivo.</p>
+<p>Exemplos incluem:</p>
+<ul>
+<li>orçamentos</li><li>cálculos</li><li>estimativas de projetos</li><li>temporizadores</li>
+<li>registros de treino</li><li>preferências salvas</li><li>configurações do aplicativo</li>
+</ul>
+<p>Geralmente, não recebemos nem armazenamos essas informações em nossos servidores.</p>
+<p>Se você desinstalar o aplicativo, as informações armazenadas localmente poderão ser excluídas permanentemente, a menos que você tenha criado seu próprio backup.</p>
+
+<h2>6. Publicidade</h2>
+<p>Alguns aplicativos exibem anúncios por meio do Google AdMob.</p>
+<p>O AdMob pode coletar automaticamente certas informações para exibir anúncios relevantes e medir o desempenho publicitário.</p>
+<p>As informações coletadas pelo Google podem incluir:</p>
+<ul>
+<li>Identificador de publicidade</li><li>Informações do dispositivo</li>
+<li>Localização aproximada (se habilitada pelo sistema operacional)</li><li>Dados de desempenho publicitário</li>
+</ul>
+<p>Para mais informações, consulte a Política de Privacidade do Google.</p>
+<p>A compra da opção "Remover Anúncios" desativa a publicidade dentro do aplicativo onde aplicável.</p>
+
+<h2>7. Compras no aplicativo</h2>
+<p>Alguns aplicativos oferecem compras opcionais, como:</p>
+<ul>
+<li>Remover Anúncios</li><li>Premium Vitalício</li><li>Assinatura Mensal</li><li>Assinatura Anual</li>
+</ul>
+<p>As compras são processadas com segurança por:</p>
+<ul><li>Google Play Billing</li><li>Compras integradas da Apple</li></ul>
+<p>Não recebemos nem armazenamos as informações do seu cartão de pagamento.</p>
+<p>A validação de compras e o gerenciamento de direitos podem ser realizados pelo RevenueCat.</p>
+
+<h2>8. Análise de dados</h2>
+<p>Alguns aplicativos utilizam serviços de análise anônimos, incluindo o Firebase Analytics.</p>
+<p>A análise nos ajuda a entender:</p>
+<ul>
+<li>o uso de recursos</li><li>a estabilidade do aplicativo</li><li>o engajamento dos usuários</li>
+<li>as preferências de idioma</li><li>a frequência de falhas</li>
+</ul>
+<p>Os dados de análise são agregados e não se destinam a identificar usuários individuais.</p>
+
+<h2>9. Relatórios de falhas</h2>
+<p>Alguns aplicativos utilizam o Firebase Crashlytics.</p>
+<p>Os relatórios de falhas podem incluir:</p>
+<ul>
+<li>modelo do dispositivo</li><li>sistema operacional</li><li>versão do aplicativo</li>
+<li>diagnósticos técnicos anônimos</li>
+</ul>
+<p>Esses relatórios nos ajudam a corrigir erros e melhorar a confiabilidade.</p>
+
+<h2>10. Privacidade de crianças</h2>
+<p>Nossos aplicativos não são direcionados a crianças menores de 13 anos, salvo indicação expressa.</p>
+<p>Não coletamos conscientemente informações pessoais de crianças.</p>
+<p>Se tomarmos conhecimento de que informações pessoais foram coletadas de uma criança em violação da legislação aplicável, excluiremos tais informações prontamente.</p>
+
+<h2>11. Seus direitos de privacidade</h2>
+<p>Dependendo da sua jurisdição, incluindo certos estados dos EUA, você pode ter direitos em relação às suas informações pessoais, incluindo:</p>
+<ul>
+<li>o direito de saber quais informações são coletadas</li>
+<li>o direito de solicitar a exclusão quando aplicável</li>
+<li>o direito de solicitar a correção quando aplicável</li>
+<li>o direito de se opor a certas atividades de processamento de dados quando exigido por lei</li>
+</ul>
+<p>Como a maioria dos aplicativos da Fábrica Apps armazena dados do usuário localmente e não exige contas, muitos desses direitos podem ser exercidos simplesmente excluindo os dados locais do aplicativo ou desinstalando-o.</p>
+
+<h2>12. Direitos de privacidade na Califórnia</h2>
+<p>Se você for residente da Califórnia, poderá ter direitos adicionais de acordo com as leis de privacidade aplicáveis na Califórnia.</p>
+<p>A Fábrica Apps não vende informações pessoais.</p>
+
+<h2>13. Segurança dos dados</h2>
+<p>Utilizamos medidas administrativas e técnicas comercialmente razoáveis para proteger as informações tratadas pelos nossos aplicativos.</p>
+<p>No entanto, nenhum método de armazenamento ou transmissão eletrônica pode ser garantido como completamente seguro.</p>
+
+<h2>14. Serviços de terceiros</h2>
+<p>Nossos aplicativos podem depender de provedores terceiros confiáveis, incluindo:</p>
+<ul>
+<li>Google Play Services</li><li>Google AdMob</li><li>Google Firebase Analytics</li>
+<li>Google Firebase Crashlytics</li><li>RevenueCat</li>
+<li>Apple App Store Services (para aplicativos iOS)</li>
+</ul>
+<p>Cada provedor mantém sua própria política de privacidade.</p>
+
+<h2>15. Usuários internacionais</h2>
+<p>Nossos aplicativos estão disponíveis internacionalmente.</p>
+<p>Ao utilizar nossos aplicativos, você reconhece que certas informações tratadas por provedores terceiros podem ser processadas em países diferentes do seu, sujeitas às leis aplicáveis e às salvaguardas do provedor.</p>
+
+<h2>16. Alterações nesta Política de Privacidade</h2>
+<p>Podemos atualizar esta Política de Privacidade periodicamente.</p>
+<p>A versão atualizada entra em vigor imediatamente após a publicação.</p>
+<p>A "Data de vigência" no topo deste documento sempre indicará a revisão mais recente.</p>
+
+<h2>17. Contato</h2>
+<p>Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:</p>
+<p>Fábrica Apps<br>E-mail: <a href="mailto:lcgf02@gmail.com">lcgf02@gmail.com</a></p>
+
+<h2>18. Avisos específicos de cada aplicativo</h2>
+<p>Certos aplicativos podem incluir divulgações de privacidade adicionais quando exigidas pela sua funcionalidade específica.</p>
+<p>Em caso de conflito entre esta Política de Privacidade geral e um aviso específico de um aplicativo, o aviso específico prevalecerá para aquele aplicativo.</p>
+
+<footer>&copy; 2026 Fábrica Apps. Todos os direitos reservados.</footer>
+</div>
+
+<script>
+function switchLang(lang) {
+  // Update panels
+  document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + lang).classList.add('active');
+  // Update tabs
+  document.querySelectorAll('.lang-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  // Update html lang attribute
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+  // Scroll to top
+  window.scrollTo(0, 0);
+}
+</script>
 </body>
 </html>
